@@ -1,16 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Exercise 04 - Form</title>
-  </head>
-  <body>
-    <main>
-      <form action="/submit">
-        <!-- Add your code here -->
-      </form>
-    </main>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Exercise 04 - Form</title>
+</head>
+
+<body>
+  <main>
+    <form action="../04-form.html" method="post">
+      <!-- Add your code here -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Full Name" required><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="name@pdx.edu" required><br><br>
+      
+      <fieldset>
+        <legend>Favorite Character:</legend>
+        <input type="radio" id="spongebob" name="character" value="spongebob" required>
+        <label for="spongebob">Spongebob</label><br>
+        <input type="radio" id="sandy" name="character" value="sandy" required>
+        <label for="sandy">Sandy</label><br>
+        <input type="radio" id="patrick" name="character" value="patrick" required>
+        <label for="patrick">Patrick</label><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Are you a fan of the show?</legend>
+        <input type="checkbox" id="yes, seen everything" name="fan" value="yes, seen everything" required>
+        <label for="yes, seen everything">Yes, I have watched all the episodes!</label><br>
+        <input type="checkbox" id="yes, memes good" name="fan" value="yes, memes good" required>
+        <label for="yes, memes good">Yes, it's got the best memes.</label><br>
+      </fieldset>
+
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+
+    </form>
+  </main>
+</body>
+
 </html>
