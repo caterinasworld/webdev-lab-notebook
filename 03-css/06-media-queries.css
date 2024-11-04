@@ -1,11 +1,10 @@
-
 nav {
   background-color: black;
   top: 0;
   left: 0;
   position: fixed;
   width: 100%;
-  height: flex;
+  height: auto;
 }
 nav ul {
   list-style-type: none;
@@ -23,7 +22,6 @@ nav ul li a {
   padding: 15px 9px;
   text-decoration: none;
 }
-
 
 .main {
   color: black;
