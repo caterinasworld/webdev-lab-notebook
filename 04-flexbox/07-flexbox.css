@@ -1,9 +1,25 @@
-.flex-container {
-  background-color: rgb(190, 190, 231);
-}
 
 /* Flex Container 1 */
-
+.flex-container-1 {
+  display: flex;
+  flex-wrap: wrap;
+  height: 200px;
+  justify-content: center;
+}
+.flex-container-1 .flex-item {
+  flex: 0 1 calc(20% - 10px);
+  border: 5px solid white;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  background-color: magenta;
+  display: flex;
+  margin-top: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 /* Flex Container 2 */
 
 /* Flex Container 3 */
