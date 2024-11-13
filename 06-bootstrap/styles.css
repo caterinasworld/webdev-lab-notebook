@@ -17,7 +17,10 @@ form > * {
   color: var(--white);
   font-size: 1.4em;
 }
-
-.box {
-  height: 160px;
+.card {
+  color: black;
+}
+.card-title {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
 }
