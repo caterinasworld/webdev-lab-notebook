@@ -7,23 +7,66 @@
   justify-content: center;
 }
 .flex-container-1 .flex-item {
-  flex: 0 1 calc(20% - 10px);
+  flex: 0 0 100px;
   border: 5px solid white;
   height: 100px;
   justify-content: center;
   align-items: center;
   color: white;
-  font-size: 24px;
+  font-size: 50px;
   background-color: magenta;
   display: flex;
-  margin-top: 0;
-  margin: 0;
-  box-sizing: border-box;
+}
+.flex-container-1 .break
+ {
+  flex-basis: 100%;
+  height: 0;
 }
 /* Flex Container 2 */
-
+.flex-container-2 {
+  display: flex;
+  flex-wrap: wrap;
+  height: 200px;
+  justify-content: right;
+}
+.flex-container-2 .flex-item {
+  flex: 0 0 100px;
+  border: 5px solid white;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 50px;
+  background-color: magenta;
+  display: flex;
+}
+.flex-container-2 .break {
+  flex-basis: 100%;
+  height: 0;
+}
 /* Flex Container 3 */
-
+.flex-container-3  {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  height: 400px;
+  justify-content: flex-end;
+}
+.flex-container-3 .flex-item {
+  flex: 0 0 100px;
+  height: 100px;
+  width: 100px;
+  justify-content: center;
+  align-items: right;
+  color: white;
+  font-size: 50px;
+  background-color: magenta;
+  display: flex;
+}
+.flex-container-3 .break {
+  flex-basis: 100%;
+  height: 0;
+}
 /* use height: 400px; on the container */
 
 /* Flex Container 4 */
@@ -32,7 +75,7 @@
 
 /* Flex Container 6 */
 
-.flex-container-6 .flex-item {
+flex-container-6 .flex-item {
   width: 400px;
 }
 
