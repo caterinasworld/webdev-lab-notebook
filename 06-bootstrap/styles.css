@@ -20,6 +20,11 @@ form > * {
 
 .box {
   height: 160px;
+  display: flex;
+  font-size: 1.4em;
+}
+.box {
+  font-size: 1.4em;
 }
 .card {
   color: black;
@@ -27,4 +32,7 @@ form > * {
 .card-title {
   font-size: 1.5em;
   margin-bottom: 0.5em;
+}
+.custom-gird-container {
+  font-size: 1.5em;
 }
