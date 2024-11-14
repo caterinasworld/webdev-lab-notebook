@@ -21,6 +21,14 @@ form > * {
   color: black;
 }
 .card-title {
-  font-size: 1.5em;
+  font-size: 1.75rem;
   margin-bottom: 0.5em;
+}
+.custom-card-container .row {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+.custom-card-container .row > * {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
