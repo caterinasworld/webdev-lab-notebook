@@ -17,7 +17,10 @@ body {
 .header {
   background-color: var(--blue);
 }
-
+.content {
+  display: flex;
+  justify-content: space-between;
+}
 .section {
   display: inline-block;
   width: 75%;

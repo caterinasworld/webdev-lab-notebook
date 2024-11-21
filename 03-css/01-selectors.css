@@ -14,8 +14,45 @@ li[class] {
   color: var(--red);
 }
 
+section ol li.dog {
+  color: var(--magenta);
+}
+section ol li#cat {
+  color: var(--teal);
+}
+section ol li.parrot {
+  color: limegreen;
+}
+section ol li.donkey {
+  color: var(--royalblue);
+}
+section ol li.hedgehog {
+  color: var(--magenta);
+}
+section ol li.cat.dog.parrot {
+  color: var(--royalblue);
+}
+
 /* Use descendant, child, and sibling selectors for the second part */
 
+li[class~='dog'] {
+  color: var(--magenta);
+}
+li[id^='c'] {
+  color: var(--teal);
+}
+li[class*='do'] {
+  color: var(--royalblue);
+}
+li[class$='g'] {
+  color: var(--violet);
+}
 section li {
   color: var(--green);
+}
+.first ~ li {
+  color: var(--magenta);
+}
+.second + li {
+  color: var(--royalblue);
 }
