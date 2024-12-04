@@ -35,22 +35,24 @@ section ol li.cat.dog.parrot {
 
 /* Use descendant, child, and sibling selectors for the second part */
 
+li[class~='dog'] {
+  color: var(--magenta);
+}
+li[id^='c'] {
+  color: var(--teal);
+}
+li[class*='do'] {
+  color: var(--royalblue);
+}
+li[class$='g'] {
+  color: var(--violet);
+}
 section li {
   color: var(--green);
 }
-.list-food ol li.first {
-  color: limegreen;
-}
-.list-food ol li.second {
+.first ~ li {
   color: var(--magenta);
 }
-.list-food ol li:nth-child(3) {
+.second + li {
   color: var(--royalblue);
-}
-.list-food ol li:nth-child(4) {
-  color: var(--magenta);
-}
-
-.list-cleaning ol li {
-  color: limegreen;
 }

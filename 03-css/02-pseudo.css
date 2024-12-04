@@ -4,5 +4,8 @@
 }
 
 .paragraph::first-letter {
-  font-size: 2em;
+  font-size: 3em;
+}
+.paragraph:hover {
+  background-color: var(--lavender);
 }
