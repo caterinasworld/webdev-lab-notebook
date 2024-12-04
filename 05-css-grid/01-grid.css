@@ -54,7 +54,7 @@
 .grid-container-4 {
   gap: 10px;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: reapeats(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   height: 600px;
 }
 .grid-container-4 .item1 {

@@ -171,7 +171,7 @@
   height: 300px;
   width: 500px;
   justify-content: left;
-  align-content: left;
+  align-content: flex-start;
 }
 .flex-container-6 .flex-item {
   flex: 0 0 130px;
@@ -191,10 +191,10 @@
   margin: 0;
 }
 .flex-container-6 .break-row-1 {
-  order: 3.5;
+  order: 3;
 }
 .flex-container-6 .break-row-2 {
-  order: 6.5;
+  order: 6;
 }
 .flex-container-6 .item1 {
   order: 1;
