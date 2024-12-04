@@ -2,8 +2,38 @@ const url = 'https://anapioficeandfire.com/api/books/';
 
 const app = document.querySelector('#books');
 
-const fetchData = (url) => {
-  // Fetch all books from the API of Ice and Fire and append them to the DOM
-  // Create an element for each book that contains title, author, publication year, and number of pages
-  // Update the styles in JavaScript to center all the books in the container given
-};
+function fetchData(url) {
+  fetch(url)
+    .then(response => response.json())
+    .then(books => {
+      const loader = document.querySelector('#loading');
+      if (loader) {
+        loader.remove();
+      }
+
+      books.forEach(book => {
+        const bookElement = document.createElement('div');
+        bookElement.className = 'mb-3 mx-auto';
+        bookElement.style.maxWidth = '500px';
+
+        bookElement.innerHTML = `
+          <div class="card-body">
+            <h4 class="card-title">${book.name}</h5>
+            <p class="card-text">
+              ${book.authors.join(', ')}<br>
+              ${new Date(book.released).getFullYear()}<br>
+              ${book.numberOfPages}
+            </p>
+          </div>
+        `;
+
+        app.appendChild(bookElement);
+      });
+    })
+    .catch(error => {
+      console.error('Error fetching books:', error);
+      app.innerHTML = '<p class="text-danger">Error loading books</p>';
+    });
+}
+
+fetchData(url);
