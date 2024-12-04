@@ -121,9 +121,19 @@ None at all. I felt like the JS exercises covered a wide range of topics.
 
 ### 08 - JQuery
 #### Were you able to complete the exercises on your own?
+So I initially did these solutions wrong using the same formats from 04 and 06 
+of the JS exercises. That was particularly my fault for not reading the instructions
+correctly. Since you said that we dont need to do this section I ended up leaving them the 
+same as they are without updating anything. 
 
 #### How helpful did you find the exercises in this section?
+Reading through your solutions is helpful since its a way for me to see how ajax and
+jquery actually works. While I did use jquery in the previous exercise, this
+was helpful to all see.
 
 #### Was there something that could be better explained?
+What Ajax actually is, but because of ThanksGiving I understand that we didnt have
+time to go through it. 
 
 #### Were there other exercises that might have helped you learn this weeks topic?
+Nothing at all. 
