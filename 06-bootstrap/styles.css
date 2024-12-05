@@ -17,7 +17,18 @@ form > * {
   color: var(--white);
   font-size: 1.4em;
 }
-
-.box {
-  height: 160px;
+.card {
+  color: black;
+}
+.card-title {
+  font-size: 1.75rem;
+  margin-bottom: 0.5em;
+}
+.custom-card-container .row {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+.custom-card-container .row > * {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
