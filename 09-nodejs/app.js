@@ -12,11 +12,11 @@ const server = http.createServer((req, res) => {
     file.serveFile('/welcome.html', 200, {}, req, res);
   }
   // form route
-  else if (req.method === 'GET' && req.url === '/form') {
-    file.serveFile('/form.html', 200, {}, req, res);
+  else if (req.method === 'GET' && req.url === '') {
+    // fill out this route
   }
   // form submission
-  else if (req.method === 'POST' && req.url === '/formExerciseSubmit') {
+  else if (req.method === 'POST' && req.url === '') {
     let body = '';
 
     req.on('data', (chunk) => {
