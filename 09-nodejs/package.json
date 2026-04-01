@@ -1,0 +1,20 @@
+{
+  "name": "node-code-samples",
+  "version": "1.0.0",
+  "description": "code samples using node.js",
+  "main": "01-hello-world.js",
+  "scripts": {
+    "start": "node 03-routing.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Caterina Paun",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.30.1",
+    "node-static": "^0.7.11"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
