@@ -9,4 +9,6 @@ Run a Wave or Lighthouse accessibility audit and address the issues that came up
 
 ## <a id="ex02"></a> Exercise 02 - Semantics
 
-In this exercise, you will need to run an accessibility audit as well as read through the code. Take a look at the code in the exercise and rewrite any code with semantics elements and address any other issues you find.
+In this exercise, you will need to run an accessibility audit as well as read through the code. All mentions of UPDATE should be rewritten. Take a look at the code in the exercise and rewrite it with semantics elements. If there are other issues, address those as well.
+
+Note: the styles look off because the elements have default styles applied by the browser that I removed. You can disregard the styles.

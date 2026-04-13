@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  background: white;
+  color: black;
+  margin: 0;
+}
+
+.top-of-page,
+.bottom-of-page {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.navigation {
+  background: #eee;
+  padding: 10px;
+  text-align: center;
+}
+
+.navigation a {
+  color: black;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.page-area {
+  padding: 20px;
+  border-bottom: 1px solid black;
+}
+
+img {
+  max-width: 300px;
+  display: block;
+}
