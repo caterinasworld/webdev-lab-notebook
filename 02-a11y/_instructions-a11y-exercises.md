@@ -1,4 +1,4 @@
-# HTML Exercises
+# Accessibility Exercises
 
 - [Exercise 01 - Audit](#ex01)
 - [Exercise 02 - Semantics](#ex02)
