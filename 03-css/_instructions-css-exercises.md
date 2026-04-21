@@ -7,6 +7,16 @@
 
 Style the books.html page as shown in the screenshots below. All the CSS should be added to the styles.css file.
 
+These are the accent colors used for the navbar and the main heading:
+
+```css
+:root {
+  --ice-blue-juvie: #8fbcd4;
+  --gothic-gray-blue: #6f8796;
+  --dark-slate-infinity: #1f2a33;
+}
+```
+
 Use 'Cinzel' as the custom font for the navbar and the headings.
 
 ```html
