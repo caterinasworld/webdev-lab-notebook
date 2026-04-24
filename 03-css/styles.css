@@ -7,6 +7,9 @@
   --gray-border: #ccc;
   --table-background: #f1f1f1;
   --table-emphasis-background: #dbdbdb;
+  --form-background: #fefefe;
+  --form-accent-color: #161678;
+  --form-midnight-blue: #0d0d55;
 }
 
 body {
@@ -115,4 +118,83 @@ body {
 .table-footer td {
   font-weight: bold;
   background-color: var(--table-emphasis-background);
+}
+
+/* Form - IRA Calculator */
+
+.form-container {
+  max-width: 420px;
+  margin: 100px auto;
+  padding: 2rem;
+  background-color: var(--form-background);
+  border-radius: 10px;
+}
+
+.form-element {
+  margin-bottom: 0.5rem;
+  border: 0;
+}
+
+.form-label {
+  display: inline-block;
+  width: 40%;
+}
+
+.form-input {
+  display: inline-block;
+  width: 45%;
+  border: 1px solid var(--gray-border);
+  border-radius: 6px;
+  padding: 0.5rem;
+}
+
+.color-bg-blue {
+  background-color: var(--form-accent-color);
+}
+
+.main-heading-form {
+  color: var(--form-accent-color);
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  width: 48%;
+  padding: 0.5rem;
+  border: 0;
+  border-radius: 6px;
+}
+
+.btn-submit {
+  background-color: var(--form-accent-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.btn-submit:hover {
+  background-color: var(--form-midnight-blue);
+}
+
+.btn-reset {
+  background-color: var(--gray-border);
+}
+
+.btn-reset:hover {
+  background-color: gray;
+}
+
+.form-note {
+  font-size: 0.8rem;
+}
+
+.form-fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.form-radios {
+  margin-left: 2rem;
+  margin-bottom: 0.75rem;
 }
