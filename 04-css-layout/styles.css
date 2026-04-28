@@ -1,0 +1,45 @@
+:root {
+  --purple: #800080;
+  --light-text-color: #fefefe;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Exercise 01 - Center */
+.box {
+  width: 200px;
+  height: 100px;
+  padding: 1rem;
+  background: var(--purple);
+  color: var(--light-text-color);
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Common styles for Flexbox and CSS Grid */
+.flex-item,
+.grid-item {
+  padding: 10px;
+  background-color: var(--purple);
+  color: var(--light-text-color);
+  font-size: 2em;
+  text-align: center;
+}
+
+.flex-item {
+  width: 160px;
+  height: 80px;
+  margin: 10px;
+}
+
+/* Exercise 02 - Flexbox */
+
+/* Exercise 03 - CSS Grid */
+
+/* Exercise 04 - CSS Grid Areas */
