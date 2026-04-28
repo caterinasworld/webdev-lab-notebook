@@ -25,12 +25,16 @@ Style the `semantics.html` page from `02-a11y` as shown in the screenshot below.
 
 ## <a id="ex02"></a> Exercise 03 - CSS Grid
 
-Create the layouut shown in the screenshot below using `CSS Grid`.
+Create the layout shown in the screenshot below using `CSS Grid`. All the CSS should be added to the `styles.css` file. The screenshots were taken in Firefox at a viewport width of 1024px.
 
 <img src="../images/04-css-layout/css-layout-ex03-css-grid.png" width=350 alt="screenshot of a layout created with CSS Grid">
 
 ## <a id="ex02"></a> Exercise 04 - CSS Grid Areas
 
-Create the layouut shown in the screenshot below using `CSS Grid Areas`.
+Recreate the following layouts using `CSS Grid Areas`. The three screenshots are there to show a mobile layout, a tablet layout, and a laptop layout. Notice that one element is not there in all three layouts, and the layout changes based on the screen size. All the CSS should be added to the `styles.css` file.
 
-<img src="../images/04-css-layout/css-layout-ex04-css-grid-areas.png" width=350 alt="screenshot of a layout created with CSS Grid">
+The first screenshots were taken in Firefox at viewport widths of 414px (mobile), 768px (tablet), and 1024px (laptop screen).
+
+<img src="../images/04-css-layout/css-layout-ex04-css-grid-areas-1.png" height=350 alt="screenshot of a layout">
+<img src="../images/04-css-layout/css-layout-ex04-css-grid-areas-2.png" height=350 alt="screenshot of a layout">
+<img src="../images/04-css-layout/css-layout-ex04-css-grid-areas-3.png" height=350 alt="screenshot of a layout">
