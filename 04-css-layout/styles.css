@@ -2,10 +2,14 @@
   --purple: #800080;
   --lavender: #e6e6fa;
   --light-text-color: #fefefe;
+  --dark-background-color: #121212;
+  --hover-color: #32cd32;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 /* Exercise 01 - Center */
@@ -52,6 +56,73 @@ h1 {
 }
 
 /* Exercise 02 - Flexbox */
+.top-of-page,
+.bottom-of-page {
+  color: var(--light-text-color);
+  background-color: var(--dark-background-color);
+  min-height: 60px;
+}
+
+.top-of-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.bottom-of-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.navigation .nav-link {
+  text-decoration: none;
+  color: var(--light-text-color);
+  padding-bottom: 0.25rem;
+  border-bottom: 3px solid transparent;
+}
+
+.navigation .nav-link:hover {
+  color: var(--hover-color);
+  border-bottom: 3px solid var(--hover-color);
+}
+
+.main-area {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 30px 0;
+}
+
+.page-area {
+  padding: 20px;
+  border: 1px solid black;
+  max-width: 350px;
+  border-radius: 6px;
+}
+
+.figure {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.figure img {
+  margin: 0 auto;
+}
+
+.figure figcaption {
+  margin-top: 10px;
+  text-align: center;
+}
 
 /* Exercise 03 - CSS Grid */
 
