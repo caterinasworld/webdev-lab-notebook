@@ -125,5 +125,111 @@ h1 {
 }
 
 /* Exercise 03 - CSS Grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(7, 100px);
+  gap: 0.4rem;
+  padding: 0.4rem;
+}
+
+.grid-container .item1,
+.grid-container .item8 {
+  grid-column: span 6;
+}
+
+.grid-container .item2 {
+  grid-column: span 4;
+  grid-row: span 4;
+}
+
+.grid-container .item3 {
+  grid-column: span 2;
+  grid-row: span 4;
+}
+
+.grid-container .item4,
+.grid-container .item5 {
+  grid-column: span 2;
+}
+
+.grid-container .item6 {
+  display: none;
+}
+
+.grid-container .item7 {
+  grid-column-start: 1;
+  grid-row-start: 6;
+  grid-column: span 2;
+}
 
 /* Exercise 04 - CSS Grid Areas */
+
+.header {
+  grid-area: header;
+}
+
+.article {
+  grid-area: article;
+}
+
+.aside {
+  grid-area: aside;
+}
+
+.section {
+  grid-area: section;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.grid-area-container {
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  grid-template-rows: repeat(9, 1fr);
+  gap: 0.4rem;
+  padding: 0.4rem;
+  grid-template-areas:
+    "header"
+    "article"
+    "article"
+    "article"
+    "section"
+    "section"
+    "section"
+    "aside"
+    "footer";
+}
+
+@media (min-width: 576px) {
+  .grid-area-container {
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    gap: 0.4rem;
+    padding: 0.4rem;
+    grid-template-areas:
+      "header header"
+      "article aside"
+      "article aside"
+      "article aside"
+      "section section"
+      "section section"
+      "footer footer";
+  }
+}
+
+@media (min-width: 992px) {
+  .grid-area-container {
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 3fr 2fr 1fr;
+    gap: 0.4rem;
+    padding: 0.4rem;
+    grid-template-areas:
+      "header header"
+      "aside article"
+      "section section"
+      "footer footer";
+  }
+}
