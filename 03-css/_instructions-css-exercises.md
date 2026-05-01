@@ -5,7 +5,7 @@
 
 ## <a id="ex01"></a> Exercise 01 - Books
 
-Style the `books.html` page as shown in the screenshots below. All the CSS should be added to the styles.css file. The screenshots were taken in Firefox at a viewport width of 1024px.
+Style the `books.html` page as shown in the screenshots below. All the CSS should be added to the `styles.css` file. The screenshots were taken in Firefox at a viewport width of 1024px.
 
 These are the accent colors used for the navbar and the main heading:
 
@@ -35,7 +35,7 @@ There is also a hover effect for the images.
 
 ## <a id="ex02"></a> Exercise 02 - Form
 
-Style the `form.html` page as shown in the screenshot below. All the CSS should be added to the styles.css file. The screenshot was taken in Firefox at a viewport width of 1024px.
+Style the `form.html` page as shown in the screenshot below. All the CSS should be added to the `styles.css` file. The screenshot was taken in Firefox at a viewport width of 1024px.
 
 The accent color is a shade of Midnight Blue (#161678). 
 
