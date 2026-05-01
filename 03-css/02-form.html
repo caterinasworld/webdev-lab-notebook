@@ -7,12 +7,118 @@
     <title>CSS Exercise 02 - Form</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <main>
-      <!-- Start with the code from the HTML folder.
-      - Make sure to fix any issues in your HTML code.
-      - Delete all mentions of <br>s and style the line breaks with CSS. 
-      - Add classes to style the elements on the page. -->
+  <body class="color-bg-blue">
+    <main class="form-container">
+      <form method="post" class="ira-form">
+        <h1 class="main-heading-form">Roth IRA Calculator</h1>
+        <div class="form-element">
+          <label class="form-label" for="balance">Balance ($):</label>
+
+          <input
+            class="form-input"
+            type="number"
+            id="balance"
+            name="balance"
+            required
+          />
+        </div>
+
+        <div class="form-element">
+          <label class="form-label" for="contribution"
+            >Annual Contribution ($)</label
+          >
+
+          <input
+            class="form-input"
+            type="number"
+            id="contribution"
+            name="contribution"
+            required
+          />
+        </div>
+
+        <fieldset class="form-fieldset">
+          <legend class="form-legend">Maximize Contributions?</legend>
+          <div class="form-radios">
+            <input
+              class="form-radio"
+              type="radio"
+              id="maximize-yes"
+              name="maximize"
+              value="yes"
+            />
+            <label for="maximize-yes">Yes</label>
+            <input
+              class="form-radio"
+              type="radio"
+              id="maximize-no"
+              name="maximize"
+              value="no"
+            />
+            <label for="maximize-no">No</label>
+          </div>
+        </fieldset>
+
+        <div class="form-element">
+          <label class="form-label" for="rate"
+            >Expected rate of return (%):</label
+          >
+
+          <input
+            class="form-input"
+            type="number"
+            id="rate"
+            name="rate"
+            step="0.1"
+            required
+          />
+        </div>
+
+        <div class="form-element">
+          <label class="form-label" for="current age">Current age</label>
+
+          <input
+            class="form-input"
+            type="number"
+            id="current age"
+            name="current age"
+            required
+          />
+        </div>
+
+        <div class="form-element">
+          <label class="form-label" for="Retirement age">Retirement age</label>
+
+          <input
+            class="form-input"
+            type="number"
+            id="Retirement age"
+            name="Retirement age"
+            required
+          />
+        </div>
+
+        <div class="form-element">
+          <label class="form-label" for="tax rate">Marginal tax rate (%)</label>
+
+          <input
+            class="form-input"
+            type="number"
+            id="tax rate"
+            name="tax rate"
+            step="0.1"
+            required
+          />
+        </div>
+        <div class="form-element">
+          <button class="btn btn-submit" type="submit">Calculate</button>
+          <button class="btn btn-reset" type="reset">Reset</button>
+        </div>
+        <p class="form-note">
+          This exercise is a simplified version of the Roth IRA Calculator at
+          <a href="https://www.calculator.net">Calculator.net</a>
+        </p>
+      </form>
     </main>
   </body>
 </html>

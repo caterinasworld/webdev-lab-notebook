@@ -4,29 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercise 01 - Audit</title>
+    <style>
+      fieldset {
+        border: 0;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
   </head>
   <body>
-    <form>
-      Name:<br />
-      <input type="text" name="name" /><br /><br />
-      Address:<br />
-      <input type="text" name="address" />
-      <br /><br />
-      City:<br />
-      <input type="text" name="city" />
-      <br /><br />
-      Zip Code:<br />
-      <input type="text" name="zip" />
-      <br /><br />
-      Credit Card Type:<br />
-      <input type="radio" name="card" value="visa" /> Visa<br />
-      <input type="radio" name="card" value="mastercard" /> MasterCard<br />
-      <input type="radio" name="card" value="amex" /> American Express<br /><br />
-      Credit Card Number:<br />
-      <input type="text" name="cc_number" /><br /><br />
-      CVC:<br />
-      <input type="text" name="cvv" /><br /><br />
-      <input type="button" value="Submit" />
-    </form>
+    <main>
+      <h1>Payment Info</h1>
+      <form>
+        <label for="name">Name:<br /></label>
+        <input type="text" id="name" name="name" /><br /><br />
+        <label for="address">Address:<br /></label>
+        <input type="text" id="address" name="address" />
+        <br /><br />
+        <label for="city">City:<br /></label>
+        <input type="text" id="city" name="city" />
+        <br /><br />
+        <label for="zip">Zip Code:<br /></label>
+        <input type="text" id="zip" name="zip" />
+        <br /><br />
+        <fieldset>
+          <legend>Credit Card Type:<br /></legend>
+          <input type="radio" id="card-visa" name="card" value="visa" />
+          <label for="card-visa">Visa<br /></label>
+          <input
+            type="radio"
+            id="card-mastercard"
+            name="card"
+            value="mastercard"
+          />
+          <label for="card-mastercard">MasterCard<br /></label>
+          <input type="radio" id="card-amex" name="card" value="amex" />
+          <label for="card-amex">American Express<br /></label>
+        </fieldset>
+        <br />
+        <label for="cc_number">Credit Card Number:<br /></label>
+        <input type="text" id="cc_number" name="cc_number" /><br /><br />
+        <label for="cvc">CVC:<br /></label>
+        <input type="text" id="cvc" name="cvc" /><br /><br />
+        <input type="submit" value="Submit" />
+      </form>
+    </main>
   </body>
 </html>
