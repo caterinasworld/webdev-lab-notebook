@@ -39,7 +39,7 @@ console.log(sortPokemons('alphabetically, in ascending order'));
 
 ## <a id="ex02"></a> Exercise 02 - Arrays
 
-Use the function expression `forEachPokemon` to return the list of Pokémons with their number and types in the format shown. Use the array method `forEach()` and string interpolation to create the output. The output should be formatted as shown below.
+Use the function expression `forEachPokemon` to return the list of Pokémons with their number and type(s) in the format shown. Use the array method `forEach()` and string interpolation to create the output. The output should be formatted as shown below.
 
 ```javascript
 console.log(forEachPokemon());
