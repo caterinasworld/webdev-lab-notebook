@@ -51,6 +51,10 @@ body {
   text-align: center;
 }
 
+.pokemonCard:hover {
+  background-color: var(--pokemon-yellow);
+}
+
 .pokemonType {
   display: inline-block;
   background-color: var(--pokemon-yellow);
