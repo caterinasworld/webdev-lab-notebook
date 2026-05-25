@@ -12,3 +12,44 @@ body {
 }
 
 /* Add your code here */
+
+.header {
+  background-color: var(--pokemon-yellow);
+  padding: 1rem;
+  text-align: left;
+}
+
+.container {
+  padding: 1rem;
+  text-align: center;
+}
+
+.loading,
+.error-message {
+  color: var(--main-light-color);
+}
+
+.poke-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pokemonCard {
+  background-color: var(--main-light-color);
+  margin: 0.5rem;
+  padding: 1rem 0.5rem 2rem 0.5rem;
+  width: 300px;
+  text-align: center;
+}
+
+.pokemonType {
+  display: inline-block;
+  background-color: var(--pokemon-yellow);
+  padding: 0.25rem;
+  margin: 0.25rem;
+}
+
+.display-none {
+  display: none;
+}
