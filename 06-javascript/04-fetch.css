@@ -24,6 +24,14 @@ body {
   text-align: center;
 }
 
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
 .loading,
 .error-message {
   color: var(--main-light-color);
