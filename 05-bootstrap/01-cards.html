@@ -10,7 +10,248 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </head>
-  <body class="bg-light">
-    <h1 class="text-center m-4">Simple Game Showcase</h1>
+  <body class="bg-light d-flex flex-column min-vh-100">
+    <header>
+      <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Simple Game Showcase</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav">
+              <a class="nav-link" href="#dino">Dino Game</a>
+              <a class="nav-link" href="#goose">Untitled Goose Game</a>
+              <a class="nav-link" href="#flappy">Flappy Bird</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <h1 class="text-center m-5">Simple Game Showcase</h1>
+    <main class="container my-5 flex-grow-1">
+      <div class="row">
+        <!-- Dino Game Card -->
+        <section class="col-md-6 col-lg-4 mb-3" id="dino">
+          <div class="card d-flex flex-column h-100">
+            <img
+              class="d-block mx-auto"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Chromium_T-Rex-error-offline.svg/250px-Chromium_T-Rex-error-offline.svg.png"
+              alt="Dino Game on Chrome"
+              width="250"
+              height="250"
+            />
+            <div class="card-body text-center">
+              <h2 class="card-title">Chrome Dino Game</h2>
+              <p class="text-start">
+                The Chrome Dino Game was released in 2014 by Google. It appears
+                when users lose internet connection in the Chrome.
+              </p>
+              <p class="text-start">
+                Players control a dinosaur that jumps over obstacles and avoids
+                enemies. It's simple, fun, and addictive.
+              </p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#dinoModal"
+              >
+                Learn more
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Dino GameModal -->
+        <div
+          class="modal fade"
+          id="dinoModal"
+          tabindex="-1"
+          aria-labelledby="dinoModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title" id="dinoModalLabel">
+                  Chrome Dino Game
+                </h3>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p class="text-start">
+                  The Chrome Dino Game was released in 2014 by Google. It
+                  appears when users lose internet connection in the Chrome.
+                </p>
+                <p class="text-start">
+                  Players control a dinosaur that jumps over obstacles and
+                  avoids enemies. It's simple, fun, and addictive.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Goose Game Card -->
+        <section class="col-md-6 col-lg-4 mb-3" id="goose">
+          <div class="card d-flex flex-column h-100">
+            <img
+              class="d-block mx-auto my-3"
+              src="https://upload.wikimedia.org/wikipedia/en/b/b2/Untitled_Goose_Game_Cover_art.jpg"
+              alt="Untitled Goose Game game cover"
+              width="258"
+              height="387"
+            />
+            <div class="card-body text-center">
+              <h2 class="card-title">Untitled Goose Game</h2>
+              <p class="text-start">
+                Untitled Goose Game was released in 2019 by House House. It is a
+                puzzle-stealth game where players control a mischievous goose
+                causing chaos in a quiet village.
+              </p>
+              <p class="text-start">
+                The game received widespread praise for its humor, unique
+                concept, and charming design. Players especially enjoyed the
+                freedom to annoy villagers in creative ways.
+              </p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#gooseModal"
+              >
+                Learn more
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Goose Game Modal -->
+        <div
+          class="modal fade"
+          id="gooseModal"
+          tabindex="-1"
+          aria-labelledby="gooseModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title" id="gooseModalLabel">
+                  Untitled Goose Game
+                </h3>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p class="text-start">
+                  Untitled Goose Game was released in 2019 by House House. It is
+                  a puzzle-stealth game where players control a mischievous
+                  goose causing chaos in a quiet village.
+                </p>
+                <p class="text-start">
+                  The game received widespread praise for its humor, unique
+                  concept, and charming design. Players especially enjoyed the
+                  freedom to annoy villagers in creative ways.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Flappy Bird Card -->
+        <section class="col-md-6 col-lg-4 mb-3" id="flappy">
+          <div class="card d-flex flex-column h-100">
+            <img
+              class="d-block mx-auto my-3"
+              src="https://upload.wikimedia.org/wikipedia/en/0/0a/Flappy_Bird_icon.png"
+              alt="Flappy Bird game logo"
+              width="316"
+              height="316"
+            />
+            <div class="card-body text-center">
+              <h2 class="card-title">Flappy Bird</h2>
+              <p class="text-start">
+                Flappy Bird was released in 2013 by Dong Nguyen. It is a mobile
+                game where players tap the screen to keep a bird flying between
+                pipes without hitting them.
+              </p>
+              <p class="text-start">
+                The game became extremely popular for its difficulty and
+                simplicity. Many players found it frustrating yet addictive,
+                leading to viral success before it was eventually removed.
+              </p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#flappyModal"
+              >
+                Learn more
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Flappy Bird Modal -->
+        <div
+          class="modal fade"
+          id="flappyModal"
+          tabindex="-1"
+          aria-labelledby="flappyModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title" id="flappyModalLabel">Flappy Bird</h3>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p class="text-start">
+                  Flappy Bird was released in 2013 by Dong Nguyen. It is a
+                  mobile game where players tap the screen to keep a bird flying
+                  between pipes without hitting them.
+                </p>
+                <p class="text-start">
+                  The game became extremely popular for its difficulty and
+                  simplicity. Many players found it frustrating yet addictive,
+                  leading to viral success before it was eventually removed.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+      <p>© 2026 Simple Game Showcase</p>
+    </footer>
   </body>
 </html>

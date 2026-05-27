@@ -5,10 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Exercise 02 - Form</title>
+    <style>
+      fieldset {
+        margin: 0;
+        border: 0;
+        padding: 0;
+      }
+    </style>
   </head>
   <body>
     <main>
-      <!-- Add your code here -->
+      <h1>Roth IRA Calculator</h1>
+      <form method="post">
+        <div>
+          <label for="balance">Balance ($):</label>
+          <br />
+          <input type="number" id="balance" name="balance" required />
+        </div>
+        <br />
+        <div>
+          <label for="contribution">Annual Contribution ($)</label>
+          <br />
+          <input type="number" id="contribution" name="contribution" required />
+        </div>
+        <br />
+        <fieldset>
+          <legend>Maximize Contributions?</legend>
+          <input type="radio" id="maximize-yes" name="maximize" value="yes" />
+          <label for="maximize-yes">Yes</label>
+          <input type="radio" id="maximize-no" name="maximize" value="no" />
+          <label for="maximize-no">No</label>
+        </fieldset>
+        <br />
+        <div>
+          <label for="rate">Expected rate of return (%):</label>
+          <br />
+          <input type="number" id="rate" name="rate" step="0.1" required />
+        </div>
+        <br />
+        <div>
+          <label for="current age">Current age</label>
+          <br />
+          <input type="number" id="current age" name="current age" required />
+        </div>
+        <br />
+        <div>
+          <label for="Retirement age">Retirement age</label>
+          <br />
+          <input
+            type="number"
+            id="Retirement age"
+            name="Retirement age"
+            required
+          />
+        </div>
+        <br />
+        <div>
+          <label for="tax rate">Marginal tax rate (%)</label>
+          <br />
+          <input
+            type="number"
+            id="tax rate"
+            name="tax rate"
+            step="0.1"
+            required
+          />
+        </div>
+        <div>
+          <br />
+          <button type="submit">Calculate</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+      <p>
+        This exercise is a simplified version of the Roth IRA Calculator at
+        <a href="https://www.calculator.net">Calculator.net</a>
+      </p>
     </main>
   </body>
 </html>
