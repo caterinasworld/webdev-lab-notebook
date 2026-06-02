@@ -2,17 +2,17 @@
 
 ## Debugging and Code Review
 
-This exercise is an opportunity to look through a website and debug some of the issues with the code.
+This debugging exercise involves testing a website and reviewing its code to uncover bugs, issues, and other potential problems.
 
-Take a look the [sample-website](./sample-website/) folder, which contains code written by Yiming Lin, a longtime TA for this course, in 2023. Since then, I have made some changes to the website, including the added fetch() call. There are several issues in the code you were given, ranging from code correctnessc to semantics to wrong implementations. There are also optimizations that you can make to the code.
+Take a look the [sample-website](./sample-website/) folder, which contains code written by Yiming Lin, a longtime TA for this course, in 2023. Since then, I have made some changes to the website, including the added fetch() call. There are several issues in the code you were given, ranging from code correctness to semantics to wrong implementations. There are also optimizations that you can make to the code.
 
 You should aim to find as many significant issues as possible based on what we learned in this class. Not every issue in this codebase will count as a significant issue. Some examples of things that will not count as significant issues are: fixing a typo, renaming a class, etc.
 
 ## What is a code review?
 
-A code review is an opportunity to check someone else’s code before it is merged into the main branch for the codebase. Code reviews are typically performed by developers other than the author of the code. The goal of the code review is to check that there are no issues with the code written and that the code written does not introduce new bugs.
+A code review is an opportunity to check someone else’s code before it is merged into the main branch for the codebase. Code reviews are typically performed by developers other than the author of the code. THe goal of a code review is to help ensure the new code functions as intended and does not introduce new bugs or issues.
 
-In the [code-review.md](./code-review.md) file, you will need to write up all the issues you found. You should describe the issue, explain why it is an issue, and write up the code for the solution. An example of one issue is listed below.
+In the [code-review.md](./code-review.md) file, document each issue you identify during your code review. You should describe the issue, explain why it is an issue, and write up the code for the solution. An example issue and solution are provided below.
 
 ## Code Review Example
 
