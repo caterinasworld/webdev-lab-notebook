@@ -1,13 +1,26 @@
 :root {
   --purple: #800080;
+  --lavender: #e6e6fa;
   --light-text-color: #fefefe;
+  --dark-background-color: #121212;
+  --hover-color: #32cd32;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 /* Exercise 01 - Center */
+.box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-color: var(--lavender);
+}
+
 .box {
   width: 200px;
   height: 100px;
@@ -16,6 +29,10 @@ body {
   color: var(--light-text-color);
   font-size: 1.75rem;
   text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
@@ -39,7 +56,180 @@ h1 {
 }
 
 /* Exercise 02 - Flexbox */
+.top-of-page,
+.bottom-of-page {
+  color: var(--light-text-color);
+  background-color: var(--dark-background-color);
+  min-height: 60px;
+}
+
+.top-of-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.bottom-of-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.navigation .nav-link {
+  text-decoration: none;
+  color: var(--light-text-color);
+  padding-bottom: 0.25rem;
+  border-bottom: 3px solid transparent;
+}
+
+.navigation .nav-link:hover {
+  color: var(--hover-color);
+  border-bottom: 3px solid var(--hover-color);
+}
+
+.main-area {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 30px 0;
+}
+
+.page-area {
+  padding: 20px;
+  border: 1px solid black;
+  max-width: 350px;
+  border-radius: 6px;
+}
+
+.figure {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.figure img {
+  margin: 0 auto;
+}
+
+.figure figcaption {
+  margin-top: 10px;
+  text-align: center;
+}
 
 /* Exercise 03 - CSS Grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(7, 100px);
+  gap: 0.4rem;
+  padding: 0.4rem;
+}
+
+.grid-container .item1,
+.grid-container .item8 {
+  grid-column: span 6;
+}
+
+.grid-container .item2 {
+  grid-column: span 4;
+  grid-row: span 4;
+}
+
+.grid-container .item3 {
+  grid-column: span 2;
+  grid-row: span 4;
+}
+
+.grid-container .item4,
+.grid-container .item5 {
+  grid-column: span 2;
+}
+
+.grid-container .item6 {
+  display: none;
+}
+
+.grid-container .item7 {
+  grid-column-start: 1;
+  grid-row-start: 6;
+  grid-column: span 2;
+}
 
 /* Exercise 04 - CSS Grid Areas */
+
+.header {
+  grid-area: header;
+}
+
+.article {
+  grid-area: article;
+}
+
+.aside {
+  grid-area: aside;
+}
+
+.section {
+  grid-area: section;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.grid-area-container {
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  grid-template-rows: repeat(9, 1fr);
+  gap: 0.4rem;
+  padding: 0.4rem;
+  grid-template-areas:
+    "header"
+    "article"
+    "article"
+    "article"
+    "section"
+    "section"
+    "section"
+    "aside"
+    "footer";
+}
+
+@media (min-width: 576px) {
+  .grid-area-container {
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    gap: 0.4rem;
+    padding: 0.4rem;
+    grid-template-areas:
+      "header header"
+      "article aside"
+      "article aside"
+      "article aside"
+      "section section"
+      "section section"
+      "footer footer";
+  }
+}
+
+@media (min-width: 992px) {
+  .grid-area-container {
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 3fr 2fr 1fr;
+    gap: 0.4rem;
+    padding: 0.4rem;
+    grid-template-areas:
+      "header header"
+      "aside article"
+      "section section"
+      "footer footer";
+  }
+}

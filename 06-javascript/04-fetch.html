@@ -4,13 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript Exercise 04 - Fetch</title>
+    <link rel="stylesheet" href="04-fetch.css" />
+    <script defer src="04-fetch.js"></script>
   </head>
   <body>
     <main>
-      <nav class="navbar">
+      <header class="header">
         <h1 class="brand-logo">Pokedex</h1>
-      </nav>
-      <!-- Use the loader.gif provided in the images/ folder -->
+      </header>
+
+      <section class="container">
+        <div class="loading-container">
+          <img
+            src="../images/loader.gif"
+            alt="loader gif while fetching data"
+            width="60"
+            height="60"
+          />
+          <p class="loading">Fetching data...</p>
+        </div>
+
+        <!-- Use the loader.gif provided in the images/ folder -->
+        <div class="poke-list"></div>
+      </section>
     </main>
   </body>
 </html>

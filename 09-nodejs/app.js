@@ -1,33 +1,36 @@
-const http = require('http');
-const static = require('node-static');
-const querystring = require('node:querystring');
+const http = require("http");
+const static = require("node-static");
+const querystring = require("node:querystring");
 
 const port = process.env.PORT || 5002;
 
-const file = new static.Server('./exercise');
+const file = new static.Server("./exercise");
 
 const server = http.createServer((req, res) => {
   // main route
-  if (req.method === 'GET' && req.url === '/') {
-    file.serveFile('/welcome.html', 200, {}, req, res);
+  if (req.method === "GET" && req.url === "/") {
+    file.serveFile("/welcome.html", 200, {}, req, res);
   }
   // form route
-  else if (req.method === 'GET' && req.url === '') {
+  else if (req.method === "GET" && req.url === "/form") {
     // fill out this route
+    file.serveFile("/form.html", 200, {}, req, res);
   }
   // form submission
-  else if (req.method === 'POST' && req.url === '') {
-    let body = '';
+  else if (req.method === "POST" && req.url === "/formExerciseSubmit") {
+    let body = "";
 
-    req.on('data', (chunk) => {
+    req.on("data", (chunk) => {
       body += chunk;
+      // console.log(body);
     });
 
-    req.on('end', () => {
+    req.on("end", () => {
       const userdata = querystring.parse(body);
-      const { usernameInput: name, emailInput: email } = userdata;
+      // console.log(userdata);
+      const { nameInput: name, emailInput: email } = userdata;
 
-      res.writeHead(200, { 'Content-Type': 'text/html' });
+      res.writeHead(200, { "Content-Type": "text/html" });
       res.write(`<p>Thank you for submitting your information: </p>`);
       res.write(`<p>Name: ${name}</p>`);
       res.write(`<p>Email: ${email}</p>`);
